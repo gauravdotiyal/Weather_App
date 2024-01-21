@@ -44,6 +44,22 @@ async function Checkweather(city ){
 searchbtn.addEventListener("click",()=>{ 
     Checkweather(searchbox.value);
 })
+
+//added onclick enter => search 
+const mytext=document.getElementById("my-text");
+const btn=document.getElementById("btn");
+
+mytext.addEventListener("keyup", e=>{
+    e.preventDefault();
+    if(e.keyCode===13){
+        // console.log("Enter is preseed");
+        btn.click();
+    }
+});
+// btn.addEventListener("click",()=>{
+//     alert("Button is clicked");
+// })
+
  
 
 

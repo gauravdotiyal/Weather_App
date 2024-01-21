@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    /* font-family: 'Baloo Bhai'; */
+}
+body{
+    background-image: url(/Images/weather3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.cards{
+    background:linear-gradient(135deg,#00feba ,#5b548a);
+    width: 90%;
+    max-width: 470px; 
+    margin: 60px auto 0;
+    padding: 40px 35px;
+    text-align: center;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.search
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+.search input{
+    border: 0;
+    outline: 0;
+    background:#ebfffc;
+    width: 70%;
+    border-radius: 25px;
+    height:60px;
+    padding: 10px 25px;
+    margin-right: 16px;
+    font-size: 18px;
+    flex: 1;
+}
+.search button{ 
+    border: 0;
+    outline: 0;
+    background:#ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.search button img{
+   width: 16px;
+}
+.weather-icon{
+    width: 170px;
+    margin-top: 30px; 
+}
+.weather h1{
+    font-size: 60px;
+    font-family: 'Baloo Bhai';
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 50px;
+    font-weight: 400;
+    font-family: 'Baloo Bhai';
+    margin-top: -8px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* used for making coloums*/
+    padding:0 20px ;
+    margin-top: 50px;
+}
+.col{
+    display: flex;
+    align-items:center;
+    text-align: left;
+}
+.col img{
+    width: 50px;
+    margin-right: 10px; 
+}
+.humidity,.wind {
+    font-size: 30px;
+    margin-top: -6px;
+}
+.weather{
+    display: none;
+}
+.error{
+    text-align: center;
+    margin-left: 10px;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-right: 100px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    display: none;
+}
